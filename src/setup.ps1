@@ -1,16 +1,14 @@
 # Task-Diag - PowerShell Core Implementation
 
 ## Project Structure
-- `src/` - Main source code files
-- `tests/` - Test scripts and Pester tests
-- `docs/` - Documentation files
-- `assets/` - Supporting assets like sample data
+- src/ - Main source code files
+- tests/ - Test scripts and Pester tests
+- docs/ - Documentation files
+- assets/ - Supporting assets like sample data
 
 ## Initial Setup Script
 This script will set up the development environment for Task-Diag.
 
-```powershell
-# setup.ps1
 param(
     [string]$ProjectPath = $PSScriptRoot
 )
