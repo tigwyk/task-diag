@@ -1,8 +1,3 @@
-# Task-Diag - Command Line Interface
-
-This script provides the command-line interface for the Task-Diag tool.
-
-```powershell
 # taskdiag.ps1
 
 param(
@@ -132,4 +127,3 @@ switch ($Action) {
         exit 1
     }
 }
-```

@@ -1,8 +1,3 @@
-# Task-Diag - Unit Tests
-
-This file contains Pester tests for the Phase 2 implementation.
-
-```powershell
 # tests/TaskDiag.Tests.ps1
 
 Describe "Task-Diag Module" {
@@ -39,4 +34,3 @@ Describe "Task-Diag Module" {
         }
     }
 }
-```

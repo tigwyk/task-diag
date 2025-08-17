@@ -1,7 +1,3 @@
-# Task-Diag - Main Module
-
-This is the main module file for the Task-Diag PowerShell tool.
-
 # Import required modules
 Import-Module Microsoft.PowerShell.Management -Force
 Import-Module Microsoft.PowerShell.Utility -Force

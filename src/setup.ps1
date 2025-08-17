@@ -1,14 +1,3 @@
-# Task-Diag - PowerShell Core Implementation
-
-## Project Structure
-- src/ - Main source code files
-- tests/ - Test scripts and Pester tests
-- docs/ - Documentation files
-- assets/ - Supporting assets like sample data
-
-## Initial Setup Script
-This script will set up the development environment for Task-Diag.
-
 param(
     [string]$ProjectPath = $PSScriptRoot
 )
@@ -59,4 +48,3 @@ Set-Content -Path $manifestPath -Value $manifestContent
 Write-Host "Created module manifest: TaskDiag.psd1" -ForegroundColor Yellow
 
 Write-Host "Task-Diag environment setup complete!" -ForegroundColor Green
-```
