@@ -1,4 +1,4 @@
-# taskdiag.ps1
+# Task-Diag - Command Line Interface
 
 param(
     [Parameter(Mandatory=$false)]
@@ -11,8 +11,11 @@ param(
     [switch]$Help
 )
 
-# Load the main module
-Import-Module "$PSScriptRoot/src/TaskDiag.psm1" -Force
+# Get the directory where this script is located
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+
+# Dot-source the main module functions
+. "$scriptDir/TaskDiag.psm1"
 
 # Show help if requested
 if ($Help) {
@@ -28,7 +31,6 @@ if ($Help) {
     Write-Host ""
     Write-Host "Options:" -ForegroundColor Cyan
     Write-Host "  -ProcessId PID   Specify process ID for detailed info" -ForegroundColor White
-    Write-Host "  -Verbose         Show verbose output" -ForegroundColor White
     Write-Host "  -Help            Show this help message" -ForegroundColor White
     Write-Host ""
     Write-Host "Examples:" -ForegroundColor Cyan
