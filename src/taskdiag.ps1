@@ -8,9 +8,6 @@ param(
     [int]$ProcessId,
     
     [Parameter(Mandatory=$false)]
-    [switch]$Verbose,
-    
-    [Parameter(Mandatory=$false)]
     [switch]$Help
 )
 
